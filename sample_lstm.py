@@ -14,7 +14,6 @@ from __future__ import print_function
 from keras.models import Sequential
 from keras.layers.core import Dense, Activation, Dropout
 from keras.layers.recurrent import LSTM
-import cPickle as pickle
 import numpy as np
 import random
 
@@ -35,9 +34,9 @@ def prettify(seq):
     txt = []
     nb = 0
     for c in seq:
-        if c == 'bar':
+        if c == '|':
             nb += 1
-            txt.append('|')
+            txt.append(c)
             if nb>1 and (nb-1) % 4 == 0:
                 txt.append('\n|')
         else:
@@ -55,7 +54,7 @@ with open('chord_progressions.txt', 'r') as fp:
 
 # separate chord in root and quality
 chords = [c.split(':') for s in pieces for c in s]
-c_root = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B']
+c_root = ['C', 'Db', 'D', 'Eb', 'E', 'F', 'Gb', 'G', 'Ab', 'A', 'Bb', 'B']
 c_qual = np.unique([c[1] for c in chords])
 root2idx = dict((c, i) for i, c in enumerate(c_root))
 qual2idx = dict((c, i) for i, c in enumerate(c_qual))
@@ -72,7 +71,7 @@ for song in pieces:
     c_prog = []
     for i, c in enumerate(song):
         if i % 4 == 0:
-            c_prog.append('bar')
+            c_prog.append('|')
         c_prog.append(c.split(':'))
     
     sequences.append(c_prog)
@@ -107,7 +106,7 @@ with open('gen_sequences.txt', 'wb') as fout:
         
         X = np.zeros((1, maxlen, num_dims), dtype=np.bool)
         for t, chord in enumerate(song[:maxlen]):
-            if chord == 'bar':
+            if chord == '|':
                 X[0, t, -1] = 1
             else:
                 X[0, t, root2idx[chord[0]]] = 1
@@ -123,7 +122,7 @@ with open('gen_sequences.txt', 'wb') as fout:
                 
             for i in xrange(48):
                 if len(gen_seq) % 5 == 0:
-                    gen_seq.append('bar')
+                    gen_seq.append('|')
                     x[0,:-1,:] = x[0,1:,:]
                     x[0,-1,:] = 0
                     x[0,-1,-1] = 1

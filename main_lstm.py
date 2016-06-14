@@ -14,7 +14,6 @@ from __future__ import print_function
 from keras.models import Sequential
 from keras.layers.core import Dense, Activation, Dropout
 from keras.layers.recurrent import LSTM
-import cPickle as pickle
 import numpy as np
 
 
@@ -26,7 +25,7 @@ with open('chord_progressions.txt', 'r') as fp:
 
 # separate chord in root and quality
 chords = [c.split(':') for s in pieces for c in s]
-c_root = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B']
+c_root = ['C', 'Db', 'D', 'Eb', 'E', 'F', 'Gb', 'G', 'Ab', 'A', 'Bb', 'B']
 c_qual = np.unique([c[1] for c in chords])
 root2idx = dict((c, i) for i, c in enumerate(c_root))
 qual2idx = dict((c, i) for i, c in enumerate(c_qual))
@@ -41,7 +40,7 @@ for song in pieces:
     c_prog = []
     for i, c in enumerate(song):
         if i % 4 == 0:
-            c_prog.append('bar')
+            c_prog.append('|')
         c_prog.append(c.split(':'))
     
     for i in range(0, min(len(c_prog), 80) - maxlen):
@@ -56,13 +55,13 @@ X = np.zeros((len(sequences), maxlen, num_dims), dtype=np.bool)
 y = np.zeros((len(sequences), num_dims), dtype=np.bool)
 for i, song in enumerate(sequences):
     for t, chord in enumerate(song):
-        if chord == 'bar':
+        if chord == '|':
             X[i, t, -1] = 1
         else:
             X[i, t, root2idx[chord[0]]] = 1
             X[i, t, qual2idx[chord[1]]+len(root2idx)] = 1
     
-    if nxt_chord[i] == 'bar':
+    if nxt_chord[i] == '|':
         y[i, -1] = 1
     else:
         y[i, root2idx[nxt_chord[i][0]]] = 1
