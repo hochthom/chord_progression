@@ -19,5 +19,5 @@ Diversity: 1.0
 
 For more examples see [examples/gen_sequences.txt](https://raw.githubusercontent.com/hochthom/chord_progression/master/examples/gen_sequences.txt).
 
-Listen to the result in [my soundcloud](https://soundcloud.com/stochastic-control/generativ-1)
+Listen to the result in [my soundcloud](https://soundcloud.com/stochastic-control/generativ-1).
 
