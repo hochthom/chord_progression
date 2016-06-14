@@ -1,0 +1,40 @@
+
+ 0: sequence 2499
+Diversity: 0.5
+|   Adom7   Adom7   Adom7   Adom7 |   Adom7   Adom7   Adom7   Adom7 |    Dmaj    Dmaj  Bbdom7  Bbdom7 |   Adom7   Adom7   Adom7   Adom7 | 
+|    Dmaj    Dmaj    Dmaj    Dmaj |    Dmaj    Dmaj    Dmaj    Dmaj |    Emin    Emin    Emin    Emin |   Adom7   Adom7   Adom7   Adom7 | 
+|    Dmaj    Dmaj    Dmaj    Dmaj |   Ddom7   Ddom7   Ddom7   Ddom7 |    Gmaj    Gmaj    Gmaj    Gmaj |    Gdim    Gdim    Gdim    Gdim | 
+|    Dmaj    Dmaj    Dmaj    Dmaj |   Ddom7   Ddom7   Ddom7   Ddom7 |    Gmaj    Gmaj    Gmaj    Gmaj |    Adim   Adom7   Adom7   Adom7
+---
+Diversity: 1.0
+|   Adom7   Adom7   Adom7   Adom7 |   Adom7   Adom7   Adom7   Adom7 |    Dmaj    Dmaj  Bbdom7  Bbdom7 |   Adom7   Adom7   Adom7   Adom7 | 
+|    Dmaj    Dmaj    Dmaj    Dmaj |   Ddom7   Ddom7   Ddom7   Ddom7 |    Gmaj    Gmaj    Gmaj    Gmaj |   Abmaj   Abmaj   Abmaj   Abmaj | 
+|    Emaj    Emaj    Emaj    Emaj |  Ebdom7  Ebdom7  Ebdom7  Ebdom7 |    Gmaj    Gmaj    Gmaj    Gmaj |  Ebdom7  Ebdom7  Ebdom7  Ebdom7 | 
+|    Amaj    Amaj    Amaj    Amaj |   Ebmaj   Ebmaj   Ebmaj   Ebmaj |    Gmaj    Gmaj    Gmaj    Gmaj |    Gmaj    Gmaj    Gmaj    Gmaj
+---
+Diversity: 1.2
+|   Adom7   Adom7   Adom7   Adom7 |   Adom7   Adom7   Adom7   Adom7 |    Dmaj    Dmaj  Bbdom7  Bbdom7 |   Adom7   Adom7   Adom7   Adom7 | 
+|    Dmaj    Dmaj    Dmaj    Dmaj |    Dmaj    Dmaj    Dmaj    Dmaj |   Ddom7   Ddom7   Ddom7   Ddom7 |   Ddom7   Ddom7   Ddom7   Ddom7 | 
+|    Gmaj    Gmaj    Gmaj    Gmaj |   Gmin7   Gmin7   Cdom7   Cdom7 |   Fdom9   Fdom9  Bbdom9  Bbdom9 |  Abmaj7  Abmaj7   Gmaj7   Gmaj7 | 
+|   Gmaj7   Gmaj7   Adom9   Adom9 |  Abmin7  Abmin7   Gdom9   Gdom9 |   Cmin7   Cmin7   Cmin7   Cmin7 |   Fmin7   Fmin7   Fmin7   Fmin7
+---
+
+ 1: sequence 1976
+Diversity: 0.5
+|    Fmaj    Fmaj    Fmaj    Fmaj |    Gmin    Gmin   Cdom7   Cdom7 |    Fmaj    Fmaj    Fmaj    Fmaj |    Gmin    Gmin   Cdom7   Cdom7 | 
+|    Fmaj    Fmaj   Cdom7   Cdom7 |    Fmaj    Fmaj    Fmaj    Fmaj |    Cmaj    Cmaj    Cmaj    Cmaj |    Dmin    Dmin    Dmin    Dmin | 
+|    Amin    Amin    Amin    Amin |   Bbmaj   Bbmaj    Amin    Amin |    Cmin    Cmin    Cmaj    Cmaj |    Dmin    Dmin    Dmaj    Dmaj | 
+|    Gmin    Gmin   Cdom7   Cdom7 |    Fmaj    Fmaj    Fmaj    Fmaj |    Dmin    Dmin    Dmaj    Dmaj |    Gmin    Gmin    Cmin    Cmin
+---
+Diversity: 1.0
+|    Fmaj    Fmaj    Fmaj    Fmaj |    Gmin    Gmin   Cdom7   Cdom7 |    Fmaj    Fmaj    Fmaj    Fmaj |    Gmin    Gmin   Cdom7   Cdom7 | 
+|    Fmaj    Fmaj   Cdom7   Cdom7 |    Fmaj    Fmaj    Fmaj    Fmaj |    Fmaj    Fmaj    Cmaj    Fmaj |    Gmin    Gmin   Cdom7   Cdom7 | 
+|    Fmaj    Fmaj    Fmin    Fmin |    Amin    Amin   Ddom7   Ddom7 |    Gmin    Gmin    Gmin    Gmin |   Cdom7   Cdom7   Cdom7   Cdom7 | 
+|    Fmaj    Fmaj    Fmaj    Fmaj |   Fmin6   Fmin6   Fmin6   Fmin6 |    Fmaj    Fmaj    Fmaj    Fmaj |    Fmaj    Fmaj    Fmaj    Fmaj
+---
+Diversity: 1.2
+|    Fmaj    Fmaj    Fmaj    Fmaj |    Gmin    Gmin   Cdom7   Cdom7 |    Fmaj    Fmaj    Fmaj    Fmaj |    Gmin    Gmin   Cdom7   Cdom7 | 
+|    Fmaj    Fmaj   Cdom7   Cdom7 |    Fmaj    Fmaj    Fmaj    Fmaj |    Cmaj    Cmaj    Cmaj    Cmaj |    Dmin    Dmin    Dmin    Dmin | 
+|    Amin    Amin    Amin    Amin |   Bbmaj   Bbmaj   Adom7   Adom7 |    Dmin    Dmin    Amin    Amin |    Dmin    Dmin    Daug    Daug | 
+|    Gmin    Gmin    Amin    Amin |   Ddom7   Ddom7 Abdom7(s5) Abdom7(s5) |    Gmin    Gmin   Gdim7   Gdim7 | Csus4(b7) Csus4(b7) Caug(b7,9)   Cmaj7
+---
